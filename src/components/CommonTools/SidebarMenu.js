@@ -11,7 +11,7 @@ class SidebarMenu extends Component {
         
             $("body, html").animate({
                 scrollTop: position
-            }, 2500 );
+            }, 2500);
         });
         // $(document).ready(function () {
         //     $('a[href^="#"]').on('click', function (e) {

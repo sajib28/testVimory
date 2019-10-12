@@ -35,6 +35,8 @@ html {
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased !important;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -80,6 +82,9 @@ a {
   text-decoration: none;
   color: #000;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -205,7 +210,6 @@ section {
   right: 0;
   background-color: #111;
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 100px;
 }
@@ -216,7 +220,6 @@ section {
   font-size: 18px;
   color: #fff;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -278,32 +281,38 @@ section {
   width: 6px;
   display: inline-block;
   -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+  -moz-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
   animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
   margin: 2px;
 }
 
 .sk-wave .sk-rect1 {
   -webkit-animation-delay: -1.2s;
+  -moz-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
 
 .sk-wave .sk-rect2 {
   -webkit-animation-delay: -1.1s;
+  -moz-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
 
 .sk-wave .sk-rect3 {
   -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
   animation-delay: -1s;
 }
 
 .sk-wave .sk-rect4 {
   -webkit-animation-delay: -0.9s;
+  -moz-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
 .sk-wave .sk-rect5 {
   -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 
@@ -355,14 +364,20 @@ section {
   line-height: 40px;
   font-size: 16px;
   border-radius: 50%;
-  display: none;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  display: block;
 }
 
 #backTop .back-top.active {
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: block;
 }
@@ -403,16 +418,10 @@ section {
   display: block;
   text-align: center;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 500px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -420,9 +429,7 @@ section {
   content: '';
   border-top: 1px solid #fff;
   margin: 0 20px 0 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 20px;
-          flex: 1 0 20px;
+  flex: 1 0 20px;
 }
 
 .modal-open .modal .modal-content .modal-title:after {
@@ -489,8 +496,7 @@ section {
 .modal-open .modal .modal-footer button.btn-danger {
   background-color: #0584D1;
   border-color: #0584D1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   z-index: 2;
   color: #fff;
 }
@@ -498,22 +504,16 @@ section {
 .modal-open .modal .modal-footer button.btn-danger:focus, .modal-open .modal .modal-footer button.btn-danger:active {
   background-color: #0584D1;
   border-color: #0584D1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform .75s ease-in-out;
-  transition: -webkit-transform .75s ease-in-out;
   transition: transform .75s ease-in-out;
-  transition: transform .75s ease-in-out, -webkit-transform .75s ease-in-out;
-  -webkit-transform: translate3d(0, 100vh, 0);
-          transform: translate3d(0, 100vh, 0);
+  transform: translate3d(0, 100vh, 0);
 }
 
 .modal.show .modal-dialog {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 /*End Modal customize css*/
@@ -586,17 +586,10 @@ svg .cls-2 {
   background-size: cover;
   background-position: center center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo-with-content .title .title-inner {
@@ -605,8 +598,6 @@ svg .cls-2 {
 
 /* common Tab content css*/
 .tab-content-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -619,15 +610,9 @@ svg .cls-2 {
 }
 
 .tab-content .react-tabs__tab-panel--selected {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-content .react-tabs__tab-list {
@@ -685,8 +670,7 @@ svg .cls-2 {
 }
 
 .tab-content .react-tabs__tab-list .react-tabs__tab:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .tab-content .react-tabs__tab-list .react-tabs__tab .img-hover {
@@ -714,15 +698,9 @@ svg .cls-2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #appFeature {
@@ -777,15 +755,9 @@ svg .cls-2 {
 }
 
 #getToday .getToday-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #getToday .mb-show {
@@ -856,6 +828,9 @@ svg .cls-2 {
   padding: 8px 15px;
   font-family: "helveticaregular";
   -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
@@ -879,6 +854,16 @@ svg .cls-2 {
   z-index: 991;
   background: rgba(0, 0, 0, 0.95);
   position: fixed;
+  width: 100%;
+}
+
+#mainMenu.absoluteClass {
+  background: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 991;
+  position: absolute;
   width: 100%;
 }
 
@@ -915,8 +900,7 @@ svg .cls-2 {
   position: absolute;
   height: 50px;
   left: 50%;
-  -webkit-transform: rotate(36.5deg);
-          transform: rotate(36.5deg);
+  transform: rotate(36.5deg);
   top: 0px;
   margin-left: -5px;
 }
@@ -938,8 +922,7 @@ svg .cls-2 {
 .second-menu.fixedClass .fa-bars.btn {
   background: none;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .second-menu.fixedClass .fa-bars:after {
@@ -948,8 +931,7 @@ svg .cls-2 {
 
 .second-menu.fixedClass .fa-bars:hover, .second-menu.fixedClass .fa-bars:active, .second-menu.fixedClass .fa-bars:focus {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .second-menu.fixedClass .fa-bars {
@@ -1010,8 +992,7 @@ svg .cls-2 {
   position: absolute;
   height: 50px;
   left: 50%;
-  -webkit-transform: rotate(36.5deg);
-          transform: rotate(36.5deg);
+  transform: rotate(36.5deg);
   top: 0px;
   margin-left: -5px;
 }
@@ -1023,8 +1004,7 @@ svg .cls-2 {
 .second-menu .navbar .fa-bars.btn {
   background: none;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .second-menu .navbar .fa-bars:after {
@@ -1033,8 +1013,7 @@ svg .cls-2 {
 
 .second-menu .navbar .fa-bars:hover, .second-menu .navbar .fa-bars:active, .second-menu .navbar .fa-bars:focus {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .second-menu .navbar .fa-bars {
@@ -1130,15 +1109,9 @@ svg .cls-2 {
 
 .photo-area .title {
   min-height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .photo-area .title .title-inner {
@@ -1162,8 +1135,7 @@ svg .cls-2 {
   position: absolute;
   font-size: 200px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: -1;
   color: rgba(238, 235, 207, 0.14);
   letter-spacing: 4px;
@@ -1177,15 +1149,9 @@ svg .cls-2 {
 }
 
 .content-area .photo-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-area .photo-content h3 {
@@ -1237,11 +1203,8 @@ svg .cls-2 {
   top: 50%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  transform: translateX(-50%);
+  justify-content: center;
   z-index: 2;
   width: 100%;
   margin: 0;
@@ -1456,6 +1419,9 @@ svg .cls-2 {
 #filter .tab-content .react-tabs__tab-list .react-tabs__tab img {
   border: 2px solid #fff;
   -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1603,14 +1569,9 @@ svg .cls-2 {
 }
 
 #pricing .price-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
 #pricing .price-container .price-panel {
@@ -1628,6 +1589,9 @@ svg .cls-2 {
   -o-box-shadow: 0 0 10px rgba(255, 255, 255, 0.41);
   width: 330px;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1656,6 +1620,9 @@ svg .cls-2 {
   font-weight: bold;
   letter-spacing: 2px;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1663,6 +1630,9 @@ svg .cls-2 {
   margin-top: 25px;
   font-size: 24px;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1673,6 +1643,9 @@ svg .cls-2 {
   margin-top: 30px;
   display: inline-block;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1703,6 +1676,9 @@ svg .cls-2 {
   clear: both;
   margin-top: 35px;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border: 2px solid #04A3DD;
 }
@@ -1753,10 +1729,7 @@ svg .cls-2 {
 
 #faqs .accordion-menu .MuiExpansionPanel-rounded .MuiExpansionPanelDetails-root {
   padding: 0px 24px 35px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #faqs .accordion-menu .MuiExpansionPanel-rounded .MuiSvgIcon-root {
@@ -1850,7 +1823,6 @@ svg .cls-2 {
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
   box-shadow: 0 0 0px 1000px #000 inset;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1864,8 +1836,7 @@ svg .cls-2 {
   -o-border-radius: 17px;
   height: 56px;
   border: 2px solid #0C89D5;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background: none;
   color: #fff !important;
   font-size: 16px;
@@ -1917,14 +1888,12 @@ svg .cls-2 {
 #footer .footer-menu ul li button {
   background: none;
   color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #footer .footer-menu ul li button:focus {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #footer .social-icon ul li {
@@ -1983,6 +1952,9 @@ svg .cls-2 {
   line-height: 32px;
   font-size: 16px;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2003,14 +1975,10 @@ svg .cls-2 {
   z-index: 9;
   min-height: 530px;
   list-style-type: none;
-  -webkit-animation-name: moveSlideshow;
-          animation-name: moveSlideshow;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: moveSlideshow;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   width: 1650px;
   z-index: 0;
   -webkit-transition: all .3s ease-in-out;
@@ -2047,16 +2015,14 @@ svg .cls-2 {
   position: absolute;
   left: 85px;
   top: 0;
-  -webkit-animation: leftTop 60s linear infinite;
-          animation: leftTop 60s linear infinite;
+  animation: leftTop 60s linear infinite;
 }
 
 .feature-box .feature-2 {
   position: absolute;
   left: 345px;
   bottom: 0;
-  -webkit-animation: leftBottom 60s linear infinite;
-          animation: leftBottom 60s linear infinite;
+  animation: leftBottom 60s linear infinite;
 }
 
 .feature-box .feature-3 {
@@ -2086,8 +2052,7 @@ svg .cls-2 {
 .feature-box .hexagon {
   width: 162px;
   height: 280px;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.55);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.55);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   margin: 30px 0;
@@ -2102,19 +2067,10 @@ svg .cls-2 {
   text-align: center;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-box .hexagon .feature-hover-content {
@@ -2147,8 +2103,7 @@ svg .cls-2 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  -webkit-box-shadow: inherit;
-          box-shadow: inherit;
+  box-shadow: inherit;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -webkit-transform-origin: center center;
@@ -2206,7 +2161,10 @@ svg .cls-2 {
 }
 
 .feature-box .hexagon .hexagon-layer {
-  background: -webkit-gradient(linear, left top, right top, from(#5BB1E5), to(#002BFF));
+  background: -webkit-linear-gradient(to right, #5BB1E5, #002BFF);
+  background: -moz-linear-gradient(to right, #5BB1E5, #002BFF);
+  background: -ms-linear-gradient(to right, #5BB1E5, #002BFF);
+  background: -o-linear-gradient(to right, #5BB1E5, #002BFF);
   background: linear-gradient(to right, #5BB1E5, #002BFF);
 }
 
@@ -2215,34 +2173,15 @@ svg .cls-2 {
   color: #fff;
 }
 
-@-webkit-keyframes moveSlideshow {
-  100% {
-    -webkit-transform: translateX(-33.33%);
-            transform: translateX(-33.33%);
-  }
-}
-
 @keyframes moveSlideshow {
   100% {
-    -webkit-transform: translateX(-33.33%);
-            transform: translateX(-33.33%);
-  }
-}
-
-@-webkit-keyframes moveSlidestop {
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transition: all .9s ease;
-    transition: all .9s ease;
+    transform: translateX(-33.33%);
   }
 }
 
 @keyframes moveSlidestop {
   100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transition: all .9s ease;
+    transform: translateX(0%);
     transition: all .9s ease;
   }
 }
@@ -2272,14 +2211,16 @@ svg .cls-2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-animation: spin-right 5s linear infinite;
-          animation: spin-right 5s linear infinite;
+  animation: spin-right 5s linear infinite;
 }
 
 .circle-position.one-circle .first-circle {
   height: 34px;
   width: 34px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7700FF), to(#3C0080));
+  background: -webkit-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -moz-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -ms-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -o-linear-gradient(to bottom, #7700FF, #3C0080);
   background: linear-gradient(to bottom, #7700FF, #3C0080);
   position: absolute;
   border-radius: 50%;
@@ -2314,8 +2255,7 @@ svg .cls-2 {
 .circle-position.two-circle .circle-spin {
   width: 140px;
   height: 140px;
-  -webkit-animation: spin-right 5s linear infinite;
-          animation: spin-right 5s linear infinite;
+  animation: spin-right 5s linear infinite;
   position: absolute;
   border: 10px solid rgba(153, 201, 230, 0.13);
   border-radius: 50%;
@@ -2330,7 +2270,10 @@ svg .cls-2 {
 .circle-position.two-circle .circle-spin .first-circle {
   width: 40px;
   height: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6EBCEB), to(#0066FF));
+  background: -webkit-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -moz-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -ms-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -o-linear-gradient(to bottom, #6EBCEB, #0066FF);
   background: linear-gradient(to bottom, #6EBCEB, #0066FF);
   border-radius: 50%;
   top: 0;
@@ -2346,31 +2289,25 @@ svg .cls-2 {
   top: 0;
   right: 0;
   position: absolute;
-  -webkit-animation: spin-right 2s linear infinite;
-          animation: spin-right 2s linear infinite;
+  animation: spin-right 2s linear infinite;
 }
 
 .circle-position.two-circle .circle-spin .first-circle .outer-orbit-small .small {
   width: 20px;
   height: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6EBCEB), to(#0066FF));
+  background: -webkit-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -moz-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -ms-linear-gradient(to bottom, #6EBCEB, #0066FF);
+  background: -o-linear-gradient(to bottom, #6EBCEB, #0066FF);
   background: linear-gradient(to bottom, #6EBCEB, #0066FF);
   border-radius: 50%;
   position: absolute;
   left: 60px;
 }
 
-@-webkit-keyframes spin-right {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes spin-right {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -2424,7 +2361,10 @@ svg .cls-2 {
   border-radius: 100%;
   overflow: hidden;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7700FF), to(#3C0080));
+  background: -webkit-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -moz-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -ms-linear-gradient(to bottom, #7700FF, #3C0080);
+  background: -o-linear-gradient(to bottom, #7700FF, #3C0080);
   background: linear-gradient(to bottom, #7700FF, #3C0080);
   -webkit-animation: rotate 30s linear infinite;
   animation: rotate 30s linear infinite;
@@ -2468,8 +2408,7 @@ svg .cls-2 {
   width: 575px;
   height: 575px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .vimory-animation .cir-1 {
@@ -2483,8 +2422,7 @@ svg .cls-2 {
   margin-left: 45px;
   margin-top: 45px;
   z-index: -5;
-  -webkit-animation: spin-right 5s linear infinite;
-          animation: spin-right 5s linear infinite;
+  animation: spin-right 5s linear infinite;
 }
 
 .vimory-animation .cir-2 {
@@ -2496,15 +2434,13 @@ svg .cls-2 {
   left: 0;
   top: 0;
   z-index: -5;
-  -webkit-animation: spin-right 10s linear infinite;
-          animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
 }
 
 .vimory-animation .cir-2.cir-3 {
   border: 3px solid rgba(245, 242, 213, 0.7);
   z-index: -5;
-  -webkit-animation: spin-right 10s linear infinite;
-          animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
 }
 
 .vimory-animation .red-small {
@@ -2533,8 +2469,7 @@ svg .cls-2 {
   bottom: -19px;
   left: 50%;
   z-index: 1;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+  transform: rotate(17deg);
 }
 
 .vimory-animation .rectangleBlue-inside {
@@ -2553,120 +2488,36 @@ svg .cls-2 {
   z-index: 1;
 }
 
-@-webkit-keyframes orbit-6 {
-  0% {
-    top: -25px;
-    left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  20% {
-    top: 0;
-    left: 59px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  40% {
-    top: 55%;
-    left: 47px;
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
-  }
-  60% {
-    top: 60px;
-    left: -7px;
-    -webkit-transform: rotate(-120deg);
-            transform: rotate(-120deg);
-  }
-  80% {
-    top: 9px;
-    left: -29px;
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
-  }
-  100% {
-    top: -25px;
-    left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
 @keyframes orbit-6 {
   0% {
     top: -25px;
     left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   20% {
     top: 0;
     left: 59px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   40% {
     top: 55%;
     left: 47px;
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
+    transform: rotate(-12deg);
   }
   60% {
     top: 60px;
     left: -7px;
-    -webkit-transform: rotate(-120deg);
-            transform: rotate(-120deg);
+    transform: rotate(-120deg);
   }
   80% {
     top: 9px;
     left: -29px;
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    transform: rotate(60deg);
   }
   100% {
     top: -25px;
     left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-@-webkit-keyframes orbit-7 {
-  0% {
-    top: -25px;
-    left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  20% {
-    top: 0;
-    left: 59px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  40% {
-    top: 55%;
-    left: 47px;
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
-  }
-  60% {
-    top: 60px;
-    left: -7px;
-    -webkit-transform: rotate(-120deg);
-            transform: rotate(-120deg);
-  }
-  80% {
-    top: 9px;
-    left: -29px;
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
-  }
-  100% {
-    top: -25px;
-    left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
 }
 
@@ -2674,104 +2525,59 @@ svg .cls-2 {
   0% {
     top: -25px;
     left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   20% {
     top: 0;
     left: 59px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   40% {
     top: 55%;
     left: 47px;
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
+    transform: rotate(-12deg);
   }
   60% {
     top: 60px;
     left: -7px;
-    -webkit-transform: rotate(-120deg);
-            transform: rotate(-120deg);
+    transform: rotate(-120deg);
   }
   80% {
     top: 9px;
     left: -29px;
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    transform: rotate(60deg);
   }
   100% {
     top: -25px;
     left: 10px;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-@-webkit-keyframes orbit-8 {
-  from {
-    -webkit-transform: rotate(0deg) translate(calc(105px - 50%), -50%) rotate(0deg);
-            transform: rotate(0deg) translate(calc(105px - 50%), -50%) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg) translate(calc(105px - 50%), -50%) rotate(-360deg);
-            transform: rotate(360deg) translate(calc(105px - 50%), -50%) rotate(-360deg);
+    transform: rotate(0);
   }
 }
 
 @keyframes orbit-8 {
   from {
-    -webkit-transform: rotate(0deg) translate(calc(105px - 50%), -50%) rotate(0deg);
-            transform: rotate(0deg) translate(calc(105px - 50%), -50%) rotate(0deg);
+    transform: rotate(0deg) translate(calc(105px - 50%), -50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg) translate(calc(105px - 50%), -50%) rotate(-360deg);
-            transform: rotate(360deg) translate(calc(105px - 50%), -50%) rotate(-360deg);
-  }
-}
-
-@-webkit-keyframes orbit-2 {
-  from {
-    -webkit-transform: rotate(0deg) translateX(calc(200px - 50%)) rotate(0deg);
-            transform: rotate(0deg) translateX(calc(200px - 50%)) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg) translateX(calc(200px - 50%)) rotate(360deg);
-            transform: rotate(-360deg) translateX(calc(200px - 50%)) rotate(360deg);
+    transform: rotate(360deg) translate(calc(105px - 50%), -50%) rotate(-360deg);
   }
 }
 
 @keyframes orbit-2 {
   from {
-    -webkit-transform: rotate(0deg) translateX(calc(200px - 50%)) rotate(0deg);
-            transform: rotate(0deg) translateX(calc(200px - 50%)) rotate(0deg);
+    transform: rotate(0deg) translateX(calc(200px - 50%)) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(-360deg) translateX(calc(200px - 50%)) rotate(360deg);
-            transform: rotate(-360deg) translateX(calc(200px - 50%)) rotate(360deg);
-  }
-}
-
-@-webkit-keyframes orbit-3 {
-  from {
-    -webkit-transform: rotate(0deg) translate(calc(200px - 50%), -50%) rotate(0deg);
-            transform: rotate(0deg) translate(calc(200px - 50%), -50%) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg) translate(calc(200px - 50%), -50%) rotate(360deg);
-            transform: rotate(-360deg) translate(calc(200px - 50%), -50%) rotate(360deg);
+    transform: rotate(-360deg) translateX(calc(200px - 50%)) rotate(360deg);
   }
 }
 
 @keyframes orbit-3 {
   from {
-    -webkit-transform: rotate(0deg) translate(calc(200px - 50%), -50%) rotate(0deg);
-            transform: rotate(0deg) translate(calc(200px - 50%), -50%) rotate(0deg);
+    transform: rotate(0deg) translate(calc(200px - 50%), -50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(-360deg) translate(calc(200px - 50%), -50%) rotate(360deg);
-            transform: rotate(-360deg) translate(calc(200px - 50%), -50%) rotate(360deg);
+    transform: rotate(-360deg) translate(calc(200px - 50%), -50%) rotate(360deg);
   }
 }
 
@@ -2969,6 +2775,12 @@ svg .cls-2 {
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
+  #intro {
+    padding: 120px 0;
+  }
+  #intro .title {
+    margin-top: 30px;
+  }
   #photoEdit .bottom-right {
     left: 20px;
   }
@@ -3429,8 +3241,7 @@ svg .cls-2 {
     display: block;
   }
   #appFeature .feature-box {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     width: 100%;
     height: auto;
     min-height: auto;
@@ -3495,8 +3306,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #effect .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -3541,8 +3351,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   .content-area .photo-content .tab-content .react-tabs__tab-panel .mobile-frame .mobile-frame-content video {
     width: 233px;
@@ -3648,8 +3457,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #getToday .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -3765,9 +3573,7 @@ svg .cls-2 {
   }
   #faqs .col-md-6.offset-md-3 {
     max-width: inherit;
-    -webkit-box-flex: inherit;
-        -ms-flex: inherit;
-            flex: inherit;
+    flex: inherit;
     margin-right: 25%;
   }
   .photo-content .tab-content .react-tabs__tab-panel--selected {
@@ -3958,8 +3764,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   .content-area .photo-content .tab-content .react-tabs__tab-panel .mobile-frame .mobile-frame-content video {
     width: 233px;
@@ -4014,8 +3819,7 @@ svg .cls-2 {
     display: block;
   }
   #appFeature .feature-box {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     width: 100%;
     height: auto;
     min-height: auto;
@@ -4079,8 +3883,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #effect .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -4174,8 +3977,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #getToday .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -4491,8 +4293,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   .content-area .photo-content .tab-content .react-tabs__tab-panel .mobile-frame .mobile-frame-content video {
     width: 233px;
@@ -4553,8 +4354,7 @@ svg .cls-2 {
     display: block;
   }
   #appFeature .feature-box {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     width: 100%;
     height: auto;
     min-height: auto;
@@ -4610,8 +4410,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #effect .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -4704,8 +4503,7 @@ svg .cls-2 {
     left: 50%;
     z-index: 99;
     width: 228px;
-    -webkit-transform: translateX(-50.8%);
-            transform: translateX(-50.8%);
+    transform: translateX(-50.8%);
   }
   #getToday .mobile-frame .mobile-frame-content .onlyMobile {
     width: 232px;
@@ -4953,4 +4751,3 @@ svg .cls-2 {
 }
 
 /* End  Mobile Version*/
-/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,6 @@ import BackgroundImage from '../../assets/img/get-in-touch-bg.jpg';
 import appleStore from '../../assets/img/apple-app-store.png';
 import googlePlay from '../../assets/img/google-play.png';
 import appilianLogo from '../../assets/img/logo-appilian.png';
-import Footer from '../CommonTools/Footer';
 class GetInTouch extends Component {
 
     componentDidMount() {
@@ -93,7 +92,6 @@ class GetInTouch extends Component {
                         </div>
                     </div>
                 </section>
-                <Footer />
             </div>
         )
     }
