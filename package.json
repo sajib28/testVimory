@@ -13,7 +13,7 @@
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "jquery.nicescroll": "^3.7.6",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.1",
     "react-accessible-accordion": "^3.0.0",
     "react-app-polyfill": "^1.0.3",
